@@ -2,10 +2,80 @@
 <html lang="en">
     <head>
         <title>
-            My Site!
+            Optimized Jackbar Portfolios
         </title>
     </head>
+    <style>
+        body {
+            background-color:aliceblue;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        #addNew {
+            margin-top: 5px;
+            margin-left: 232px;
+            background-color: darkorange;
+            font-weight: bold;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkorange;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .examples {
+            font-style:italic;
+            align-self: center;
+        }
+        
+
+    </style>
+    <script src="http://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="http://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="invest_opt.js"></script>
     <body>
-        <h1>This is my GitHub Pages website!</h1>
+        <h1>Optimized Jackbar Portfolios</h1>
+        <body>
+            <div id = "fundTable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>FUND NAME (TKR)</th>
+                            <th>TOTAL AMOUNT INVESTED ($)</th>
+                            <th>ASSET ALLOCATION (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td><input class="examples" type = "text" placeholder = "e.g. VTSAX"></td>
+                            <td>$<input class="examples" type = "text" placeholder = "e.g. 3000.00"></td>
+                            <td><input class="examples" type = "text" placeholder = "e.g. 20.0">%</td>
+                        </tr>
+                        <tr>
+                            <td>Atlantic Ocean</td>
+                            <td>3,646 m</td>
+                            <td>8,486 m</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </body>
+        <input id = "addNew" type = "submit" value = "+ Add New">
+        <form id = "form">
+            <input id = "task" placeholder = "+ Add New" type = "text">
+            <input id = "submit" type = "submit">
+        </form>
     </body>
 </html>
